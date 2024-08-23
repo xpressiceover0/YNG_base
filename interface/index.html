@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Control de Acelerómetros</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+</head>
+<body>
+    <div>
+        <button class="button-78" id="onoff_study" type="button" onclick="startStudy()">Iniciar Estudio</button>
+    </div>
+    <div class="container">
+        <div class="sensor" id="sensor1" onmouseover="changeDivText(this)" onmouseout="normalDiv(this)">
+            <div class="data" id="data1"></div>
+            <canvas class="chart" id="chart1" width="800" height="350"></canvas>
+            <h4>Amplitud 1</h4>
+        </div>
+        <div class="sensor" id="sensor2">
+            <div class="data" id="data2"></div>
+            <canvas class="chart" id="chart2" width="800" height="350"></canvas>
+            <h4>Amplitud 2</h4>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sensor" id="fourier1">
+            <div class="data" id="F1"></div>
+            <canvas class="chart" id="chartF1" width="800" height="350"></canvas>
+            <h4>Frecuencias 1</h4>
+        </div>
+        <div class="sensor" id="fourier2">
+            <div class="data" id="F2"></div>
+            <canvas class="chart" id="chartF2" width="800" height="350"></canvas>
+            <h4>Frecuencias 2</h4>
+        </div>
+    </div>
+
+    <script src="/static/scripts/script.js"></script>
+</body>
+</html>
